@@ -1,0 +1,86 @@
+.about__heading {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.about__inner {
+  padding: 0 0 30px;
+}
+.about__content {
+}
+.about__title {
+  @include heading(28px);
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.about__content-body {
+  display: flex;
+  flex-direction: column;
+}
+.about__content-title {
+  @include main-font-styles($subtitle);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+
+  &::after {
+    content: '';
+    background: url(../images/sprites/sprite.svg#queistion-marks) no-repeat;
+    width: 44px;
+    height: 67px;
+  }
+  span {
+    color: $secondary-color;
+  }
+}
+.about__arrows-down {
+  margin: 32px 0 54px;
+  display: flex;
+  justify-content: center;
+  .about__arrows-img-box {
+    img {
+    }
+  }
+}
+.about__content-cards {
+}
+.about__cards-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.about__cards-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 300px;
+}
+.about__cards-item-icon {
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  background: $accent-color; 
+  padding: 16px 16px;
+  border-radius: 50%;
+
+  .about__cards-icon {
+    width: 100%;
+    height: 100%;
+  }
+}
+.about__cards-item-title {
+  @include main-font-styles($title);
+  font-weight: 700;
+  margin: 32px 0 10px;
+  
+}
+.about__cards-item-text {
+  @include main-font-styles($body);
+  color: #DEE5EB;
+}
+
+

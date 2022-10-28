@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include( './html/0_head.html', { 'title': 'DC - portfolio' } )
+<body>
+<div class="wrapper">
+  @@include( './html/1_header.html' )
+  <main class="main">
+    @@include( './html/2_projects.html' )
+    @@include( './html/3_about.html' )
+    @@include( './html/4_contacts.html' )
+  </main>
+  @@include( './html/5_footer.html',  {
+    "github": {
+      "href": "https://github.com/DanielChirkin",
+      "img": "../images/sprites/sprite.svg#github"
+    },
+    "instagram": {
+      "href": "https://www.instagram.com/daniel_chirkin.dev",
+      "img": "../images/sprites/sprite.svg#instagram"
+    },
+    "telegram": {
+      "href": "https://t.me/Hatcliff",
+      "img": "../images/sprites/sprite.svg#telegram"
+    },
+    "mail": {
+      "href": "mailto:daniilbarigin@gmail.com",
+      "img": "../images/sprites/sprite.svg#mail"
+    }
+  })
+</div>
+<script src="./js/app.min.js"></script>
+</body>
+</html>

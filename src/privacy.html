@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include( './html/0_head.html', { 'title': 'Что произойдёт с данными?' } )
+<style>
+  .wrapper {
+    gap: 70px;
+  }
+</style>
+<body>
+<div class="wrapper">
+  @@include( './html/privacy/header.html' )
+  <main class="main">
+   
+  </main>
+  @@include( './html/privacy/footer.html',  {
+    "github": {
+      "href": "https://github.com/DanielChirkin",
+      "img": "../images/sprites/sprite.svg#github"
+    },
+    "instagram": {
+      "href": "https://www.instagram.com/daniel_chirkin.dev",
+      "img": "../images/sprites/sprite.svg#instagram"
+    },
+    "telegram": {
+      "href": "https://t.me/Hatcliff",
+      "img": "../images/sprites/sprite.svg#telegram"
+    },
+    "mail": {
+      "href": "mailto:daniilbarigin@gmail.com",
+      "img": "../images/sprites/sprite.svg#mail"
+    }
+  })
+</div>
+<script>
+  const burger = document.querySelector('.header__burger')
+  const header = document.querySelector('header')
+  const activeClass = 'active'
+
+  addEvent(burger, header, activeClass)
+
+  function addEvent(element, header, activeClass) {
+    element.addEventListener('click', (e) => {
+      if ( getComputedStyle(element).display === 'none' ) return
+  
+      header.classList.toggle(activeClass)
+      document.body.classList.toggle('no-scroll')
+    })
+  }
+</script>
+</body>
+</html>

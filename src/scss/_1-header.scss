@@ -1,0 +1,174 @@
+// header
+
+/* header animation*/
+@import './_header__animation.scss';
+
+/* header top */
+.header__top {
+  padding: 16px 0 15px 0;
+}
+.header__top-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  //z-index: 20;
+}
+.header__top-logo {
+  justify-self: center;
+  z-index: 1;
+}
+.header__nav-list {
+  display: flex;
+  height: 100%;
+}
+.header__nav-item {
+  z-index: 10;
+  position: relative;
+  height: 100%;
+  transition: color .3s;
+
+  &:not(:last-child) {
+    margin-right: 32px;
+  }
+  &:hover {
+    color: $secondary-color;
+  }
+}
+.header__nav-link {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* header hero */
+.header__hero {
+  height: 100%;
+}
+.header__hero-inner {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  position: relative;
+}
+.header__hero-content {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+.header__left-content {
+  max-width: 660px;
+  z-index: 1;
+}
+.header__left-content-title {
+  @include heading($h1);
+
+  margin-bottom: 32px;
+}
+.header__left-content-subtitle {
+  @include main-font-styles($subtitle);
+  color: #DEE5EB;
+  max-width: 580px;
+}
+.header__btn-box {
+  margin-top: 70px;
+}
+.header__btn:not(:last-child) {
+  margin-right: 24px;
+}
+.header__right-content {
+  position: relative;
+  z-index: 1;
+  max-width: 391px;
+  width: 100%;
+  transform: translateY(0vh);
+}
+.header__robot {
+  transition: .3s;
+  transform: translateY(5%);
+  max-height: 311px;
+  height: 100%;
+  position: relative;
+  .header__robot-cloud {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+
+    .header__robot-cloud-inner {
+      position: relative;
+      width: 144px;
+      line-height: 150%;
+      padding: 15px 15px 45px;
+      z-index: 1;
+      
+      span {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+
+        .header__cloud-img-box {
+          img {
+          }
+        }
+      }
+    }
+  }
+}
+.header__robot-img-box {
+  height: 100%;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.header__polygons-path {
+  position: absolute;
+  z-index: -0;
+  top: 5%;
+  right: -7%;
+  .header__pol-path-img-box {
+    img {
+      
+    }
+  }
+}
+
+@keyframes overlay-apear {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+.header__overlay {
+  position: fixed;
+  z-index: 998;
+  width: 100vw;
+  height: 100vh;
+  background: #1a1a1a80;
+  backdrop-filter: blur(8px);
+  animation: overlay-apear .9s forwards ease-out;
+  /* Note: backdrop-filter has minimal browser support */
+}
+
+.header__burger, .header__navbar-penel, .header__circle, .header__overlay {
+  display: none;
+}
+.header__navbar{
+  z-index: 1;
+}
+.header__navbar-penel{
+}
+.header__burger {
+  
+}
+
+.header__navbar-window {
+  height: 100%;
+}
+
+.header__robot-panel {
+  display: none;
+  transition: .4s;
+}

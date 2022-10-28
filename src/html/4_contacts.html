@@ -1,0 +1,86 @@
+<section class="contacts" id="contacts">
+  <div class="container">
+    <h2 class="contacts__heading">Контакты</h2>
+    <div class="contacts__inner">
+      <div class="contacts__left">
+        <form name="contacts-form" action="" class="contacts__form" novalidate>
+          <ul class="contacts__form-list">
+            <li class="contacts__form-item">
+              <label for="name">Имя</label>
+              <input name="name" type="text" class="contacts__form-input" id="name" required>
+              <span class="contacts__form-validation"></span>
+            </li>
+            <li class="contacts__form-item">
+              <label for="email">Email</label>
+              <input name="email" type="email" class="contacts__form-input" id="email" required>
+              <span class="contacts__form-validation"></span>
+            </li>
+            <li class="contacts__form-item dropdown">
+              <label for="select">Тема</label>
+              <div tabindex="-1" data-custom-select class="contacts__select contacts__form-input" id="select" >
+                <ul class="contacts__select-options">
+                  <li class="contacts__select-option" data-select-option="design">Заказать дизайн</li>
+                  <li class="contacts__select-option" data-select-option="markup">Заказать верстку сайта</li>
+                  <li class="contacts__select-option" data-select-option="design-n-markup">Заказать дизайн и верстку</li>
+                  <li class="contacts__select-option" data-select-option="illustration">Заказать иллюстрацию</li>
+                  <li class="contacts__select-option" data-select-option="icons">Заказать иконки</li>
+                  <li class="contacts__select-option" data-select-option="hire">Нанять</li>
+                  <li class="contacts__select-option" data-select-option="other">Другое</li>
+                </ul>
+                <select name="topic" id="topic" class="contacts__form-input" required>
+                  <option value="empty"></option>
+                  <option value="design"></option>
+                  <option value="markup"></option>
+                  <option value="design-n-markup"></option>
+                  <option value="illustration"></option>
+                  <option value="icons"></option>
+                  <option value="hire"></option>
+                  <option value="other"></option>
+                </select>
+              </div>
+              <span class="contacts__form-validation"></span>
+            </li>
+            <li class="contacts__form-item textarea">
+              <label for="message" class="contacts__textarea-label">Сообщение</label>
+              <textarea name="message" id="message" class="contacts__form-input" cols="30" rows="10" required maxLength="512" minlength="16"></textarea>
+              <span class="contacts__form-validation"></span>
+            </li>
+          </ul>
+          <div class="contacts__form-alert">
+            <p>Внимание!</p>
+            <p>Нажимая на кнопку "Отправить" вы соглашаетесь, что я (владелец сайта https://digital-creation-portfolio.netlify.app) не несу какой-либо ответственности за переданные вами данные через форму выше. Отправляйте их на свой страх и риск! Для того чтобы связаться, рекомендую использовать указанные соц. сети или e-mail</p>
+            <div class="contacts__form-alert-link"><a href="/privacy.html">Что произойдёт с данными?</a></div>
+            <div class="contacts__form-accept">
+              <div class="contacts__checkbox-wrapper">
+                <input type="checkbox" name="alert-accept" id="alert-accept" required>
+                <span class="contacts__custom-checkbox"></span>
+                <label for="alert-accept">Понятно</label>
+              </div>
+              <span class="contacts__form-validation"></span>
+            </div>
+          </div>
+          <button type="submit" class="contacts__btn button">Отправить</button>
+        </form>
+      </div>
+      <div class="contacts__right">
+        <div class="contacts__illust">
+          <div class="contacts__illust-panel">
+            <div class="contacts__illust-socials">
+              <ul class="contacts__socials-list">
+                @@loop('./socials-item.html', './data/socials.json')
+              </ul>
+            </div>
+          </div>
+          <div class="contacts__illust-robot">
+            <div class="contacts__robot-img-box">
+              <img src="../images/sprites/sprite.svg#robot-look-left" alt="robot-look-left">
+            </div>
+          </div>
+        </div>
+        <div class="contacts__polygon-path">
+          <img src="../images/sprites/sprite.svg#polygon-path-contacts" class="svg-polygon-path-contacts-dims" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

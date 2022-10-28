@@ -1,0 +1,13 @@
+<svg width="144" height="112" viewBox="0 0 144 112" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<g id="cloud-vector" filter="url(#filter0_b_463_4122)">
+		<path d="M138 0C141.314 0 144 2.68629 144 6V75.134C144 78.4477 141.314 81.134 138 81.134L138.068 81.134V112L129.708 81.134L6 81.134C2.68629 81.134 0 78.4477 0 75.134V6C0 2.68629 2.68629 0 6 0H138Z" fill="#3749A4" fill-opacity="0.7" />
+	</g>
+	<defs>
+		<filter id="filter0_b_463_4122" x="-4" y="-4" width="152" height="120" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feGaussianBlur in="BackgroundImage" stdDeviation="2" />
+			<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_463_4122" />
+			<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_463_4122" result="shape" />
+		</filter>
+	</defs>
+</svg>

@@ -1,0 +1,26 @@
+/* ================= 720px =======================*/
+
+@media (max-width: 720px) {
+  .projects__slider-arrows .projects__slider-arrow {
+    cursor: default;
+  }
+
+  .projects__slider-dots {
+    span {
+      width: 8px;
+      height: 8px;
+    }
+  }
+}
+
+
+/* ================= 540px =======================*/
+
+@media (max-width: 540px) {
+  .projects__categories-btn {
+    // font-size: 18px;
+  }
+  .projects__badge {
+    // font-size: 18px;
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "github": {
+    "href": "https://github.com/DanielChirkin",
+    "img": "../images/sprites/sprite.svg#github"
+  },
+  "instagram": {
+    "href": "https://www.instagram.com/daniel_chirkin.dev",
+    "img": "../images/sprites/sprite.svg#instagram"
+  },
+  "telegram": {
+    "href": "https://t.me/Hatcliff",
+    "img": "../images/sprites/sprite.svg#telegram"
+  },
+  "mail": {
+    "href": "mailto:daniilbarigin@gmail.com",
+    "img": "../images/sprites/sprite.svg#mail"
+  }
+}

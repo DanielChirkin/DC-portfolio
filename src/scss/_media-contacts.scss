@@ -1,0 +1,127 @@
+/* ================= 1120px =======================*/
+
+@media ( max-width: 1120px ){
+  .contacts__right {
+    display: flex;
+    position: relative;
+    max-width: fit-content;
+    max-height: fit-content;
+    width: auto;
+    height: auto;
+    margin-left: 15px;
+  }
+  .contacts__illust {
+    z-index: 1;
+    max-width: fit-content;
+    max-height: fit-content;
+    min-height: fit-content;
+    padding-right: 75px;
+    padding-bottom: 134px;
+    width: auto;
+    height: auto;
+  }
+  .contacts__illust-panel {
+    transition: .3s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: fit-content;
+    min-height: fit-content;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    
+    &::after {
+      position: absolute;
+      display: block;
+      z-index: -1;
+      content: '';
+      top: 0%;
+      left: 0%;
+      background: url(../images/sprites/sprite.svg#panel-small) no-repeat;
+      background-size: cover;
+      max-width: 100%;
+      max-height: 100%;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .contacts__socials-list {
+    flex-direction: column;
+    padding: 60px 45px 20px;
+  }
+
+  .contacts__illust-robot {
+    top: 71%;
+  }
+}
+
+/* ================= 730px =======================*/
+
+@media (max-width: 730px) {
+  .contacts__right {
+    display: none;
+  }
+
+  .contacts__left {
+    max-width: 100%;
+  }
+  .contacts__form-item, .contacts__form-input, .contacts__form-item textarea {
+    max-width: 100%;
+  }
+
+  .contacts__form-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+.contacts__form-item {
+  label, p {
+    // font-size: px;
+  }
+  // select
+  .contacts__select {
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      .contacts__select-options {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 24px ;
+        font-size: 18px;
+        width: 100%;
+
+        .contacts__select-option {
+          transition: .3s;
+          background: $accent-color;
+          width: 100%;
+          padding: 24px 8px ;
+          text-align: center;
+          border-radius: $main-border-radius;
+
+          &:hover {
+            color: #fff;
+            background: $secondary-color;
+          }
+        }
+      }
+    }
+    &.dropdown-active .contacts__select-options {
+      display: flex;
+    }
+
+  }
+
+  .contacts__form-input {
+    padding: 24px 16px;
+    height: 64px;
+  }
+  .contacts__btn {
+    width: 100%;
+    margin-top: 64px;
+  }
+}

@@ -1,0 +1,41 @@
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 150%;
+}
+.header__answer {
+  margin-top: 70px;
+  line-height: 130%;
+}
+.answer {
+}
+.container {
+}
+.answer__inner {
+}
+.answer__heading {
+  
+}
+.answer__list {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.answer__item {
+  a {
+    text-decoration: underline;
+    color: $accent-color;
+    
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+  &:last-child {
+    font-size: 20px;
+    margin-top: 40px;
+    max-width: 500px;
+  }
+}
+

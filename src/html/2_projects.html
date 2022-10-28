@@ -1,0 +1,133 @@
+<section class="projects" id="projects">
+  <div class="container">
+    <div class="projects__inner">
+      <h2 class="projects__title">Мои проекты</h2>
+      <div class="projects__categories">
+        <ul class="projects__categories-list">
+          <li class="projects__categories-item active">
+            <button class="projects__categories-btn" data-value="all">Всё</button>
+          </li>
+          @@loop('./categories-item.html', './data/categories.json')
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="projects__slider">
+    <div class="container">
+      <div class="projects__slider-inner">
+        <div class="projects__slider-arrows" data-projects-arrows>
+          <span class="projects__slider-arrow" data-projects-prevArrow></span>
+          <span class="projects__slider-arrow" data-projects-nextArrow></span>
+        </div>
+        <div class="projects__card-box swiper" data-projects-slider >
+          <div class="projects__card-box-wrapper swiper-wrapper">
+            @@loop('./projects-card.html', './data/projectsCards.json')
+            <!-- <div class="projects__card mini-projects swiper-slide">
+              <div class="projects__thumbnail-box">
+                <img src="empty" alt="thumbnail">
+              </div>
+              <div class="projects__btn-box">
+                <div class="projects__btn button button-small button-link">
+                  <a href="#" class="projects__btn-link"></a>
+                  <span></span>
+                </div>
+                <div class="projects__btn button button-small button-link">
+                  <a href="#" class="projects__btn-link"></a>
+                  <span></span>
+                </div>
+              </div>
+              <div class="projects__card-description">
+                <div class="projects__description-title">Title</div>
+                <div class="projects__description-body">Lorem ipsum dolor sit, amet consectetu</div>
+              </div>
+              <span class="projects__badge"></span>
+            </div>
+            <div class="projects__card design swiper-slide">
+              <div class="projects__thumbnail-box">
+                <img src="empty" alt="thumbnail">
+              </div>
+              <div class="projects__btn-box">
+                <div class="projects__btn button button-small button-link">
+                  <a href="#" class="projects__btn-link"></a>
+                  <span></span>
+                </div>
+                <div class="projects__btn button button-small button-link">
+                  <a href="#" class="projects__btn-link"></a>
+                  <span></span>
+                </div>
+              </div>
+              <div class="projects__card-description">
+                <div class="projects__description-title">Title</div>
+                <div class="projects__description-body">Lorem ipsum dolor sit, amet consectetu</div>
+              </div>
+              <span class="projects__badge"></span>
+            </div>
+            <div class="projects__card markup swiper-slide">
+              <div class="projects__thumbnail-box">
+                <img src="empty" alt="thumbnail">
+              </div>
+              <div class="projects__btn-box">
+                <div class="projects__btn button button-small button-link">
+                  <a href="#" class="projects__btn-link"></a>
+                  <span></span>
+                </div>
+                <div class="projects__btn button button-small button-link">
+                  <a href="#" class="projects__btn-link"></a>
+                  <span></span>
+                </div>
+              </div>
+              <div class="projects__card-description">
+                <div class="projects__description-title">Title</div>
+                <div class="projects__description-body">Lorem ipsum dolor sit, amet consectetu</div>
+              </div>
+              <span class="projects__badge"></span>
+            </div>
+            <div class="projects__card illustrations swiper-slide">
+              <div class="projects__thumbnail-box">
+                <img src="empty" alt="thumbnail">
+              </div>
+              <div class="projects__btn-box">
+                <div class="projects__btn button button-small button-link">
+                  <a href="#" class="projects__btn-link"></a>
+                  <span></span>
+                </div>
+                <div class="projects__btn button button-small button-link">
+                  <a href="#" class="projects__btn-link"></a>
+                  <span></span>
+                </div>
+              </div>
+              <div class="projects__card-description">
+                <div class="projects__description-title">Title</div>
+                <div class="projects__description-body">Lorem ipsum dolor sit, amet consectetu</div>
+              </div>
+              <span class="projects__badge"></span>
+            </div>
+            <div class="projects__card development commercial swiper-slide">
+              <div class="projects__thumbnail-box">
+                <img src="empty" alt="thumbnail">
+              </div>
+              <div class="projects__btn-box">
+                <div class="projects__btn button button-small button-link">
+                  <a href="#" class="projects__btn-link"></a>
+                  <span></span>
+                </div>
+                <div class="projects__btn button button-small button-link">
+                  <a href="#" class="projects__btn-link"></a>
+                  <span></span>
+                </div>
+              </div>
+              <div class="projects__card-description">
+                <div class="projects__description-title">Title</div>
+                <div class="projects__description-body">Lorem ipsum dolor sit, amet consectetu</div>
+              </div>
+              <span class="projects__badge"></span>
+            </div> -->
+          </div>
+        </div>
+        <div class="projects__slider-dots" >
+          <div class="projects__slider-dots-wrapper" data-projects-dots></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

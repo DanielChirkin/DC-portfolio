@@ -1,0 +1,35 @@
+@mixin font($font_name-fontName, $file_name-fileName, $weight-weight: 400, $style-style: normal) {
+  @font-face {
+  font-family: $font_name-fontName;
+  font-display: swap;
+  src: local( $font_name-fontName ),
+      url("../fonts/#{$file_name-fileName}.woff") format("woff"),
+      url("../fonts/#{$file_name-fileName}.woff2") format("woff2"),
+      url("../fonts/#{$file_name-fileName}.eot") format("eot");
+  font-weight: $weight-weight;
+  font-style: $style-style;
+  }
+}
+
+
+@mixin fonts-include($properties-list, $lenght-lenght) {
+  @for $i from 0 to $lenght-lenght {
+    @include font( nth($properties-list, 1),
+                  nth( nth($properties-list, 2), $i + 1),
+                  nth( nth($properties-list, 3), $i + 1),
+                  nth( nth($properties-list, 4), $i + 1),
+    );
+  }
+}
+
+$font-name: "Mukta";
+
+$properties-list: (
+  $font-name, // name
+  ('#{$font-name}-Bold', '#{$font-name}-ExtraLight', '#{$font-name}-Regular'), // file names
+  (700, 200, 400), // weights
+  ('normal', 'normal', 'normal') // styles
+);
+
+
+@include fonts-include($properties-list, 3)

@@ -1,0 +1,7 @@
+<svg width="38" height="32" viewBox="0 0 38 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<g id="arrows">
+		<path id="arrow-3" d="M2 18.5291L19 29.5001L36 18.5291" stroke="#48CCA8" stroke-width="3" stroke-linecap="round" />
+		<path id="arrow-2" d="M2 9.77124L19 20.7423L36 9.77124" stroke="#48CCA8" stroke-opacity="0.6" stroke-width="3" stroke-linecap="round" />
+		<path id="arrow-1" d="M2 1.5L19 12.4711L36 1.5" stroke="#48CCA8" stroke-opacity="0.3" stroke-width="3" stroke-linecap="round" />
+	</g>
+</svg>

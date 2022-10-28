@@ -1,0 +1,52 @@
+/* ================= 900px =======================*/
+
+@media (max-width: 900px) {
+  .about__cards-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 64px;
+  }
+}
+
+/* ================= 730px =======================*/
+
+@media (max-width: 730px) {
+  .about__heading {
+    text-align: center;
+    margin-bottom: 45px;
+  }
+}
+
+/* ================= 540px =======================*/
+
+@media (max-width: 540px) {
+  .about__title {
+    font-size: 26px
+  }
+  .about__content-title {
+    font-size: 26px
+  }
+  .about__cards-item-title {
+    font-size: 24px;
+  }
+  .about__cards-item-text {
+    font-size: 18px;
+    line-height: 150%;
+  }
+}
+
+/* ================= 395px =======================*/
+
+@media (max-width: 395px) {
+  .about__content-title {
+    p {
+      text-align: center;
+    }
+    
+    &::after {
+      display: none; 
+    }
+  }
+}

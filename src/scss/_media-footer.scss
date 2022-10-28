@@ -1,0 +1,30 @@
+/* ================= 730px =======================*/
+
+@media (max-width: 730px) {
+  .footer__navbar {
+    display: none;
+  }
+  .footer__top-inner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px
+  }
+  .footer__logo {
+    width: 100%;
+  }
+  .footer__socials-link {
+    svg {
+      width: 48px;
+      height: 48px;
+    }
+  }
+  .footer__logo-link .svg-Logo-wide-light-dims {
+    width: 130px;
+    height: 130px;
+  }
+  .footer__bottom-inner {
+   align-items: center;
+   justify-content: center; 
+  }
+}

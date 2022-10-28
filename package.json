@@ -1,0 +1,78 @@
+{
+  "name": "dc-porfolio",
+  "version": "1.0.0",
+  "description": "Web-Site-Portfolio of Daniil Chirkin",
+  "main": "gulpfile.js",
+  "type": "module",
+  "scripts": {
+    "svgSprite": "gulp svgSprites",
+    "zip": "gulp deployZip --build",
+    "deploy": "gulp deployFtp --build",
+    "build": "gulp build --build",
+    "dev": "gulp dev"
+  },
+  "keywords": [
+    "digital creation",
+    "DigitalCreation",
+    "DanielChirkin",
+    "Daniel Chirkin",
+    "Daniil Chirkin",
+    "DaniilChirkin",
+    "Chirkin",
+    "DC"
+  ],
+  "author": "Daniil Chirkin <nickobalick22@gmail.com>",
+  "license": "MIT",
+  "browserslist": [
+    "last 3 versions"
+  ],
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "dependencies": {
+    "firebase": "^9.12.1",
+    "swiper": "^8.4.4"
+  },
+  "devDependencies": {
+    "@babel/core": "latest",
+    "@babel/preset-env": "latest",
+    "browser-sync": "latest",
+    "gulp": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-babel": "latest",
+    "gulp-clean": "latest",
+    "gulp-clean-css": "latest",
+    "gulp-css-url-replace": "latest",
+    "gulp-file-include": "latest",
+    "gulp-fonter": "latest",
+    "gulp-format-html": "latest",
+    "gulp-group-css-media-queries": "latest",
+    "gulp-htmlmin": "latest",
+    "gulp-if": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-newer": "latest",
+    "gulp-notify": "latest",
+    "gulp-plumber": "latest",
+    "gulp-rename": "latest",
+    "gulp-replace": "latest",
+    "gulp-replace-image-src": "latest",
+    "gulp-replace-image-src-from-data-attr": "latest",
+    "gulp-sass": "latest",
+    "gulp-svg-sprite": "latest",
+    "gulp-ttf2woff2": "latest",
+    "gulp-util": "latest",
+    "gulp-version-number": "latest",
+    "gulp-webp": "latest",
+    "gulp-webpcss": "latest",
+    "gulp-xv-webp-html": "latest",
+    "gulp-zip": "latest",
+    "node-sass-tilde-importer": "^1.0.2",
+    "sass": "latest",
+    "vinyl-ftp": "latest",
+    "webp-converter": "2.2.3",
+    "webpack": "latest",
+    "webpack-stream": "latest"
+  }
+}

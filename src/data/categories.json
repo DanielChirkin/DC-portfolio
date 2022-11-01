@@ -4,27 +4,7 @@
     "value": "markup"
   },
   {
-    "name": "Дизайн",
-    "value": "design"
-  },
-  {
-    "name": "Иллюстрации",
-    "value": "illustrations"
-  },
-  {
-    "name": "Разработка",
-    "value": "development"
-  },
-  {
     "name": "Дизайн и верстка",
     "value": "design-n-markup"
-  },
-  {
-    "name": "Мини-проекты",
-    "value": "mini-projects"
-  },
-  {
-    "name": "Коммерческие",
-    "value": "commercial"
   }
 ]

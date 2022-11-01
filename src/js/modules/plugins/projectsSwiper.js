@@ -42,7 +42,7 @@ const options = {
     1260: {
       slidesPerView: 3,
       slidesPerGroup: 3,
-      spaceBetween: 80,
+      spaceBetween: 64,
     }
   },
 }
@@ -127,7 +127,22 @@ const slides = swiper.slides
 
 
 slides.forEach(slide => {
+  const btnBox = slide.querySelector('.projects__btn-box')
+  if ( btnBox.classList.contains('no-btns') ) return
+
   slide.addEventListener('click', e => {
-    slide.classList.toggle('description-open')
+
+    if ( !slide.classList.contains('no-desc') )
+      slide.classList.toggle('description-open')
+
+    slide.classList.toggle('active')
+  })
+
+  slide.addEventListener('mouseleave', e => {
+    if ( !slide.classList.contains('no-desc') )
+      slide.classList.remove('description-open')
+
+    if ( slide.classList.contains('active') )
+      slide.classList.remove('active')
   })
 })

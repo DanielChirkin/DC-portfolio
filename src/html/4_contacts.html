@@ -3,7 +3,7 @@
     <h2 class="contacts__heading">Контакты</h2>
     <div class="contacts__inner">
       <div class="contacts__left">
-        <form name="contacts-form" action="" class="contacts__form" novalidate>
+        <form name="contacts-form" class="contacts__form" novalidate>
           <ul class="contacts__form-list">
             <li class="contacts__form-item">
               <label for="name">Имя</label>
@@ -16,7 +16,7 @@
               <span class="contacts__form-validation"></span>
             </li>
             <li class="contacts__form-item dropdown">
-              <label for="select">Тема</label>
+              <label for="topic">Тема</label>
               <div tabindex="-1" data-custom-select class="contacts__select contacts__form-input" id="select" >
                 <ul class="contacts__select-options">
                   <li class="contacts__select-option" data-select-option="design">Заказать дизайн</li>
@@ -28,14 +28,14 @@
                   <li class="contacts__select-option" data-select-option="other">Другое</li>
                 </ul>
                 <select name="topic" id="topic" class="contacts__form-input" required>
-                  <option value="empty"></option>
-                  <option value="design"></option>
-                  <option value="markup"></option>
-                  <option value="design-n-markup"></option>
-                  <option value="illustration"></option>
-                  <option value="icons"></option>
-                  <option value="hire"></option>
-                  <option value="other"></option>
+                  <option value="" label="empty"></option>
+                  <option value="design">option</option>
+                  <option value="markup">option</option>
+                  <option value="design-n-markup">option</option>
+                  <option value="illustration">option</option>
+                  <option value="icons">option</option>
+                  <option value="hire">option</option>
+                  <option value="other">option</option>
                 </select>
               </div>
               <span class="contacts__form-validation"></span>

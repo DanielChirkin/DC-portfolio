@@ -102,17 +102,14 @@
       padding: 15px 15px 45px;
       z-index: 1;
       
-      span {
+      .header__cloud-img-box {
         z-index: -1;
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-
-        .header__cloud-img-box {
-          img {
-          }
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+        img {
         }
       }
     }

@@ -137,6 +137,7 @@
   }
 }
 .projects__card {
+  cursor: pointer;
   position: relative;
   display: flex;
   flex-direction: column-reverse;
@@ -147,109 +148,128 @@
   max-width: 346px;
   max-width: 100%;
   width: 100%;
-  height: 346px;
-  //height: 100%;
+  height: 380px;
   overflow: hidden;
+  
 
   &.commercial {
     .projects__badge {
+      display: initial;
+      background: linear-gradient(135deg, #e1ba51 0%, #978252 50%, #e1d0a7 99%);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
       &::after {
-        content: '$';
-        margin: 0 0 0 10px;
-      }
-    }
-
-    .projects__btn:nth-child(2) {
-      display: none;
-    }
-  }
-  &.mini-projects {
-    .projects__badge {
-      display: initial;
-      background: #6a7898;
-
-      &::before {
-        content: 'Мини-проект';
+        content: '';
+        background: url(../images/sprites/sprite.svg#currency-dollar) no-repeat;
+        width: 18px;
+        height: 18px;
+        display: inline-block;
       }
     }
   }
-  &.design {
-    .projects__badge {
-      display: initial;
-      background: $pink-color;
-      content: 'Макет';
+  // &.mini-projects {
+  //   .projects__badge {
+  //     display: initial;
+  //     background: #6a7898;
 
-      &::before {
-        content: 'Дизайн';
-      }
-    }
+  //     &::before {
+  //       content: 'Мини-проект';
+  //     }
+  //   }
+  // }
+  // &.design {
+  //   .projects__badge {
+  //     display: initial;
+  //     background: $pink-color;
+  //     content: 'Макет';
+
+  //     &::before {
+  //       content: 'Дизайн';
+  //     }
+  //   }
     
-    .projects__btn:nth-child(2) {
-      display: none;
-    }
+  //   .projects__btn:nth-child(2) {
+  //     display: none;
+  //   }
 
-    .projects__btn span::before {
-      content: 'Макет';
-    }
-  }
-  &.design-n-markup {
-    .projects__badge {
-      display: initial;
-      background: linear-gradient(90deg, #7926E2 0%, #c23650 99%);
-      content: 'Макет';
+  //   .projects__btn span::before {
+  //     content: 'Макет';
+  //   }
+  // }
+  // &.design-n-markup {
+  //   .projects__badge {
+  //     display: initial;
+  //     background: linear-gradient(90deg, #7926E2 0%, #c23650 99%);
+  //     content: 'Макет';
 
-      &::before {
-        content: 'Дизайн и верстка';
-      }
-    }
+  //     &::before {
+  //       content: 'Дизайн и верстка';
+  //     }
+  //   }
     
-    .projects__btn:nth-child(2) {
-      display: none;
-    }
+  //   .projects__btn:nth-child(2) {
+  //     display: none;
+  //   }
 
-    .projects__btn span::before {
-      content: 'Макет';
-    }
-  }
-  &.development {
-    .projects__badge {
-      display: initial;
-      background: #4875dc;
+  //   .projects__btn span::before {
+  //     content: 'Макет';
+  //   }
+  // }
+  // &.development {
+  //   .projects__badge {
+  //     display: initial;
+  //     background: #4875dc;
 
-      &::before {
-        content: 'Разработка';
-      }
-    }
-  }
-  &.illustrations {
-    .projects__badge {
-      display: initial;
-      background: #d87e29;
+  //     &::before {
+  //       content: 'Разработка';
+  //     }
+  //   }
+  // }
+  // &.illustrations {
+  //   .projects__badge {
+  //     display: initial;
+  //     background: #d87e29;
 
-      &::before {
-        content: 'Иллюстрация';
-      }
-    }
-  }
-  &.markup {
-    .projects__badge {
-      display: initial;
-      background: #c23650;
+  //     &::before {
+  //       content: 'Иллюстрация';
+  //     }
+  //   }
+  // }
+  // &.markup {
+  //   .projects__badge {
+  //     display: initial;
+  //     background: #c23650;
 
-      &::before {
-        content: 'Верстка';
-      }
-    }
-  }
+  //     &::before {
+  //       content: 'Верстка';
+  //     }
+  //   }
+  // }
 
-  &:hover {
-    transform: translate(-6px, -6px);
+  &.active {
+    transform: scale(0.98) translate(-6px, -6px) ;
     box-shadow: 6px 6px 0 0 $primary-color;
     transition: .3s;
 
     .projects__btn {
       transition: .4s cubic-bezier(.7,-0.22,.37,1.51);
       transform: translate(0);
+    }
+    
+    &::after {
+      cursor: default;
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #192a4b51;
+      backdrop-filter: blur(4px);
+      animation: overlay-apear .3s ease-in alternate;
     }
   }
 
@@ -264,7 +284,6 @@
     top: 0;
     left: 0;
     background: linear-gradient(180deg, #192A4B 0%, #395b9fb3 66%, #5773ffbf 99%);
-    // backdrop-filter: blur(8px);
     padding: 50px 15px 15px;
 
     &.no-desc {
@@ -293,13 +312,14 @@
   position: absolute;
   top: 10px;
   left: 10px;
-  padding: 5px 10px;
+  padding: 5px 5px;
   border-radius: 6px;
   font-size: 14px;
   background: $pink-color;
   display: none;
 }
 .projects__thumbnail-box {
+  backface-visibility: hidden;
   z-index: 0;
   position: absolute;
   top: 0;
@@ -307,6 +327,7 @@
   height: 100%;
   width: 100%;
   img {
+    position: absolute;
     height: 100%;
     width: 100%;
   }
@@ -325,27 +346,35 @@
     &:nth-child(2) {
       display: none;
     }
+    &:nth-child(3) {
+      display: none;
+    }
+  }
+
+  &.two-btns .projects__btn {
+    &:nth-child(3) {
+      display: none;
+    }
   }
 }
 .projects__btn {
   transition: .6s cubic-bezier(0,.5,.32,1.64);
-  &:nth-child(1) {
-    span::before {
-      content: 'Сайт';
-      margin-top: 2px;
-    }
 
+  span {
+    margin-top: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &:nth-child(odd) {
     transform: translateX(-125%);
   }
-  &:nth-child(2) {
-    span::before {
-      content: 'Код';
-      margin-top: 2px;
-    }
+  &:nth-child(even) {
     transform: translateX(125%);
   }
 }
 .projects__btn-link {
+  z-index: 1;
 }
 .projects__slider-dots {
   position: relative;

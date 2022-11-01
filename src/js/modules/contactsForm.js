@@ -104,9 +104,6 @@ export class FormValidation {
   isValid(input, custom = false) {
     let isValid
 
-    if ( custom )
-    isValid = input.value !== 'empty'
-    else
     isValid = input.validity.valid
 
     return isValid
@@ -127,12 +124,6 @@ export class FormValidation {
       error.textContent = tooLongText ? tooLongText : `Максимальное колличество символов - ${input.maxLength}; Сейчас - ${input.value.length}`
     } else if (input.validity.tooShort) {
       error.textContent = tooShortText ? tooShortText : `Минимальное колличество символов: ${input.minLength}; Сейчас: ${input.value.length}`
-    }
-    
-    if ( custom ) {
-      if ( input.value === 'empty' ) {
-        error.textContent = valueMissingText ? valueMissingText : "Поле не должно быть пустым!"
-      }
     }
       
     formItem.classList.add('invalid')

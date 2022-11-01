@@ -4,11 +4,13 @@
     "value": "markup",
     "additionalValues": "", // commercial
     "imgUrl": "empty",
-    "btnsState": "", // no-btns, one-btn ( display: none to second button)
+    "btnsState": "", // no-btns, one-btn ( display: none to second and third buttons), two-btns ( display: none to third button )
     "btnText1": "",
     "btnLink1": "#",
     "btnText2": "",
     "btnLink2": "#",
+    "btnText3": "",
+    "btnLink3": "#",
     "noDesc": "no-desc", // no-desc
     "descriptionTitle": "title",
     "description": "descrpition"
@@ -23,6 +25,8 @@
     "btnLink1": "#",
     "btnText2": "",
     "btnLink2": "#",
+    "btnText3": "",
+    "btnLink3": "#",
     "noDesc": "no-desc",
     "descriptionTitle": "title",
     "description": "descrpition"
@@ -37,6 +41,8 @@
     "btnLink1": "#",
     "btnText2": "",
     "btnLink2": "#",
+    "btnText3": "",
+    "btnLink3": "#",
     "noDesc": "no-desc",
     "descriptionTitle": "title",
     "description": "description"
@@ -51,6 +57,8 @@
     "btnLink1": "#",
     "btnText2": "",
     "btnLink2": "#",
+    "btnText3": "",
+    "btnLink3": "#",
     "noDesc": "no-desc",
     "descriptionTitle": "title",
     "description": "description"
@@ -65,6 +73,8 @@
     "btnLink1": "#",
     "btnText2": "",
     "btnLink2": "#",
+    "btnText3": "",
+    "btnLink3": "#",
     "noDesc": "no-desc",
     "descriptionTitle": "title",
     "description": "description"
@@ -79,6 +89,8 @@
     "btnLink1": "#",
     "btnText2": "",
     "btnLink2": "#",
+    "btnText3": "",
+    "btnLink3": "#",
     "noDesc": "no-desc",
     "descriptionTitle": "title",
     "description": "description"

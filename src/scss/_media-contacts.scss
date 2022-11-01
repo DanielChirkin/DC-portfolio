@@ -60,6 +60,11 @@
 /* ================= 730px =======================*/
 
 @media (max-width: 730px) {
+  .contacts__form-accept {
+      .contacts__checkbox-wrapper, .contacts__checkbox-wrapper label, input {
+        cursor: default;
+      }
+  }
   .contacts__right {
     display: none;
   }
